@@ -1,23 +1,22 @@
 ---
 author-meta:
-- Daniel S. Himmelstein
-- Anthony Gitter
-- Venkat S. Malladi
-- Evan M. Cofer
+- David R. Slochower
 date-meta: '2017-08-17'
 keywords:
 - work-in-progress
 - markdown
 - manuscript
 - publishing
-title: 'Manubot Rootstock: Manuscript Title'
+title: Response to reviewers for "Motor-Like Properties of Non-Motor Enzymes" by Slochower
+  and Gilson, PNAS 2017-11059
 ...
-
-# Response to reviewers for "Motor-Like Properties of Non-Motor Enzymes" by Slochower and Gilson, PNAS 2017-11059
 
 We thank the reviewers for their considered responses of our manuscript "Motor-Like Properties of Non-Motor Enzymes".
 We believe the reviewers have highlighted some important issues with the phrasing of our conclusions.
 However, we also believe some of the reviewers' comments can be addressed quickly and succinctly.
+One of the main concerns raised is that our conclusions are not well supported due to a lack of controls.
+We have extensively looked at the robustness of our results in terms of variations in assumptions and parameters, but we neglected to include all of these in our manuscript, due to concerns over space.
+Below, we've included several additional pieces of evidence that support our conclusions and address the reviewers' concerns.
 
 ## Reviewer 1
 
@@ -25,15 +24,19 @@ However, we also believe some of the reviewers' comments can be addressed quickl
 
 > First, using the same model, the authors should explain carefully how the enzymes without significant conformational change exhibit enhanced diffusivity upon catalysis?
 
-We would like to clarify that the goal of the manuscript was not to explain the enhanced diffusivity of enzymes upon catalysis.
-Rather, we focus on revealing and describing the dynamics of chiral molecules placed out of equilibrium, sampling two potential energy surfaces.
-This model has been discussed before (!!!) but the emergence of directional flux has not been discussed.   
+We would like to clarify that the primary goal of our manuscript is not to explain the enhanced diffusivity of enzymes upon catalysis.
+Rather, we focus on revealing and describing the dynamics of chiral molecules -- such as enzymes -- that are driven out of equilibrium by a concentration gradient of substrate and product.
+Strictly speaking, our results are not specific for enzymes and a conformational change is not required.
+Any chiral molecule that can be placed out of equilibrium has the potential to undergo directional motion along one degree of freedom.
+The extent to which a molecule shows net flux depends on the shape of the two potential energy surfaces for each state.
+The model we employ was developed using theoretical reasoning about the motion of Brownian particles [@miCoCNAy], but the emergence of directional flux in biological systems has hitherto remained unexplored.
 Our conclusions state that the "the hydrodynamic coupling [...] might help explain why some enzymes diffuse faster when catalytically active."
-We will modify the text of our conclusion to focus more on ...
+We will modify the text of our conclusion to highlight that the behavior we describe is just one possible mechanism for enhanced diffusivity.
 
 > Likewise, for the enzymes with significant conformational changes that have very low kcat, what will the model predict?
 
-In the main text, we describe the case of HIV protease with $k_\text{cat} \sim 1 \,\text{s}^{-1}$, compared to the relatively high values of catalysis for ADK and PKA.  
+In the main text, we describe this case using HIV protease (HIVP), which has a catalytic rate an order of magntiude lower than the rates for adenylate kinase (ADK) and protein kinase A (PKA).
+We demonstrate that increasing the catalytic rate of HIVP to be comparable to ADK and PKA increases the number of torsions that show directional flux and the magnitude of directional flux.
 
 Directional flux is limited by this low level of catalysis and we show that increasing the catalytic rate increases the level of flux.
 
@@ -77,7 +80,7 @@ Further, the choice of $D$ is saturating.
 
 > Why did they choose this model? In what way is it better than more straightforward free energy and rate calculations used in atomistic simulations?
 
-Separate simulations of apo and bound state protiens 
+Separate simulations of apo and bound state protiens
 
 > The procedure for determining the chemical potential and rate coefficients seems a bit convoluted and not as straightforward as it can be.
 
