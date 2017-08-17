@@ -36,7 +36,6 @@ pandoc --verbose \
   --metadata link-citations=true \
   --smart \
   --mathjax \
-#  --css=github-pandoc.css \
   --include-in-header=build/assets/analytics.js \
   --include-after-body=build/assets/anchors.js \
   --output=output/manuscript.html \
