@@ -51,6 +51,7 @@ wkhtmltopdf \
   --margin-bottom 17 \
   --margin-left 0 \
   --margin-right 0 \
+  --javascript-delay 2000 \
   webpage/index.html \
   output/manuscript.pdf
 
