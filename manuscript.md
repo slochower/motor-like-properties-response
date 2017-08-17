@@ -39,16 +39,24 @@ In the main text, we describe this case using HIV protease (HIVP) which has a ca
 We demonstrate that artificially boosting the catalytic rate of HIVP to be comparable to that of ADK and PKA, increases the number of torsions that show directional flux and the magnitude of the flux.
 This comparison is explicitly shown in Figures 1b, 1c, 1d, and 1f where curves for HIVP with both low and high catalytic rates are shown.
 Figure S4 goes into more detail on the effect of $k_\text{cat}$ by depicting the number of torsions that show directional flux above a particular threshold as a function of both concentration and intermediate catalytic rates (reproduced below).
-![Figure S4 in "Motor-Like Properties of Non-Motor Enzymes."](images/figure-s4.png){#fig:figure-s4 width=10cm}
+
+![Figure S4 in "Motor-Like Properties of Non-Motor Enzymes."](images/figure-s4.png){#fig:figure-s4 width=20cm}
+
 Increasing the catalytic rate increases the number of torsions that have directional flux above a threshold, but this effect saturates at large values for the catalytic rate.
 The saturating effect is shown in one of the `jupyter` notebooks linked in the [GitHub](https://github.com/GilsonLabUCSD/nonequilibrium/) site listed in the acknowledgments.
-For the $\chi$2 dihedral angle in Thr175 of ADK, flux as a function of catalytic rate from $k_\text{cat} = 0 \,\text{s}^{-1}$ to $k_\text{cat} = 1000 \,\text{s}^{-1}$ is shown.
+For the $\chi$ 2 dihedral angle in Thr175 of ADK, flux as a function of catalytic rate from $k_\text{cat} = 0 \,\text{s}^{-1}$ to $k_\text{cat} = 1000 \,\text{s}^{-1}$ is shown.
+
 ![Directional flux as a function of catalytic rate for a particular torsion in ADK.](images/flux-vs-catalytic-rate.png){#fig:flux-vs-catalytic-rate width=10cm}
+
+We will include this plot in the manuscript and discuss the role of catalytic rate more systematically.
+
 > Finally, the authors should carefully explain the role of change in torsional landscape and kcat (specifically in some simplistic models and fluctuating landscapes) in producing directed motion and then show the link of either landscape and kcat for the motor proteins, thus showing the evolutionary link.
 
-We have looked at simplistic models for the landscapes (flat, monotonically increasing, sawtooth waves) and concluded that landscapes that show the largest amount of flux
+This is an incisive comment, correctly noting that the shape of the potential energy surface and $k_\text{cat}$ are the two dominant factors affecting the level of directional flux observed.
+We have looked at simplistic models for the potential energy surfaces, such as flat, monotonically increasing, and sawtooth landscapes.
 
 We have looked at the effect of symmetrizing landscapes as "controls."
+This is also shown in the [GitHub](https://github.com/GilsonLabUCSD/nonequilibrium/) site listed in the acknowledgments.
 
 ### Minor criticisms
 

@@ -13,13 +13,13 @@
   ],
   "ci_source": {
     "repo_slug": "slochower/motor-like-properties-response",
-    "commit": "024558c2ba370ef8eb23f73e61df435668604f27"
+    "commit": "0adb62248557ea3f8921dcd5c67247698cd1aae9"
   },
   "manuscript_stats": {
     "reference_counts": {
       "doi": 1,
       "total": 1
     },
-    "word_count": 918
+    "word_count": 971
   }
 }
