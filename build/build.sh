@@ -43,10 +43,10 @@ pandoc --verbose \
   $INPUT_PATH
 
 # Create PDF output
-echo "Exporting PDF manuscript (pandoc)"
+echo "Exporting PDF manuscript (pandoc via HTML)"
 pandoc --verbose \
   --from=markdown \
-  --to=pdf \
+  --to=html5 \
   --filter pandoc-fignos \
   --filter pandoc-eqnos \
   --filter pandoc-tablenos \
