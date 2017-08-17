@@ -43,7 +43,7 @@ Figure S4 goes into more detail on the effect of $k_\text{cat}$ by depicting the
 ![](images/figure-s4.png){#fig:figure-s4 width=20cm}
 
 Increasing the catalytic rate increases the number of torsions that have directional flux above a threshold, but this effect saturates at large values for the catalytic rate.
-The saturating effect is shown in one of the `jupyter` notebooks linked in the [GitHub](https://github.com/GilsonLabUCSD/nonequilibrium/) site listed in the acknowledgments.
+The [GitHub](https://github.com/GilsonLabUCSD/nonequilibrium/) site listed in the acknowledgments contains a [`jupyter` notebook](https://github.com/GilsonLabUCSD/nonequilibrium/blob/418bd87da31165c8a0e5105b005bb24bfc06fe39/supplementary-information.ipynb) that shows the saturating effect undering the heading "How does changing the catalytic rate change the flux results?".
 For the $\chi_2$ dihedral angle in Thr175 of ADK, flux as a function of catalytic rate from $k_\text{cat} = 0 \,\text{s}^{-1}$ to $k_\text{cat} = 1000 \,\text{s}^{-1}$ is shown.
 
 ![Directional flux as a function of catalytic rate for a particular torsion in ADK.](images/flux-vs-catalytic-rate.png){#fig:flux-vs-catalytic-rate width=10cm}
@@ -56,11 +56,15 @@ This is an incisive comment, correctly noting that the shape of the potential en
 I believe we addressed the role of $k_\text{cat}$ above.
 We have looked at simplistic models for the potential energy surfaces, such as flat, monotonically increasing, and sawtooth landscapes.
 Any surface that is symmetric (i.e., an even function) will not produce directional flux because clockwise and counterclockwise motion are equally likely.
-As "controls," we symmetrized the landscapes
+As "controls," we symmetrized the landscapes by averaging each population histogram with its reflection about $0$ rad.
+Symmetrized surfaces have high levels of directional flux along each surface -- what we term "reciprocating flux" in the manuscript -- but sum to zero.
+This is shown in another [`jupyter` notebook](https://github.com/GilsonLabUCSD/nonequilibrium/blob/418bd87da31165c8a0e5105b005bb24bfc06fe39/supplementary-information-symmetry.ipynb) listed on the [GitHub](https://github.com/GilsonLabUCSD/nonequilibrium/) in the acknowledgments.
 
-This is also shown in the [GitHub](https://github.com/GilsonLabUCSD/nonequilibrium/) site listed in the acknowledgments.
+![Symmetrized landscapes and the resulting flux.](images/symmetric-landscapes.png){width=10cm} ![](images/symmetric-flux.png){width=10cm}
 
-We can add instructive examples showing the results of the model on simple landscapes.
+We believe the asymmetric potential energy surfaces are a result of evolutionary pressures, leading to chiral building blocks for proteins, but we cannot prove this hypothesis.
+As mentioned earlier, we omitted these results from the supplementary information because we did not have space to discuss the figures in the main text, but we are happy to include them in a revision.
+We can also add instructive examples showing results for simplistic landscapes.
 
 ### Minor criticisms
 
