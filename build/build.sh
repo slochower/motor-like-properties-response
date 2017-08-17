@@ -43,6 +43,7 @@ pandoc --verbose \
   $INPUT_PATH
 
 # Create PDF output
+cd output/
 echo "Exporting PDF manuscript (pandoc via HTML)"
 pandoc --verbose \
   --from=markdown \
@@ -50,16 +51,17 @@ pandoc --verbose \
   --filter pandoc-fignos \
   --filter pandoc-eqnos \
   --filter pandoc-tablenos \
-  --bibliography=$BIBLIOGRAPHY_PATH \
-  --csl=$CSL_PATH \
+  --bibliography=../$BIBLIOGRAPHY_PATH \
+  --csl=../$CSL_PATH \
   --metadata link-citations=true \
   --smart \
   --mathjax \
-  --css=github-pandoc.css \
-  --include-in-header=build/assets/analytics.js \
-  --include-after-body=build/assets/anchors.js \
-  --output=output/manuscript-pandoc.pdf \
+  --css=../github-pandoc.css \
+  --include-in-header=../build/assets/analytics.js \
+  --include-after-body=../build/assets/anchors.js \
+  --output=../output/manuscript-pandoc.pdf \
   $INPUT_PATH
+cd ../
 
 echo "Exporting PDF manuscript (wkhtmltopdf)"
 wkhtmltopdf \
