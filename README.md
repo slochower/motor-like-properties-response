@@ -1,6 +1,6 @@
 # Output directory containing the formatted manuscript
 
-The [`gh-pages`](https://github.com/greenelab/manubot-rootstock/tree/gh-pages) branch hosts the contents of this directory at https://greenelab.github.io/manubot-rootstock/.
+The [`gh-pages`](https://github.com/slochower/motor-like-properties-response/tree/gh-pages) branch hosts the contents of this directory at https://slochower.github.io/motor-like-properties-response/.
 
 ## Files
 
@@ -15,4 +15,4 @@ This directory contains the following files, which are mostly ignored on the `ma
 ## Source
 
 The manuscripts in this directory were built from
-[`795490c79400016d3e6171b8a3b64309d6a1507c`](https://github.com/greenelab/manubot-rootstock/commit/795490c79400016d3e6171b8a3b64309d6a1507c).
+[`64c4e2917ce8e840b6428ae40f4e34f16465734a`](https://github.com/slochower/motor-like-properties-response/commit/64c4e2917ce8e840b6428ae40f4e34f16465734a).
