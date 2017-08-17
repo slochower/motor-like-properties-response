@@ -35,16 +35,15 @@ We will modify the text of our conclusion to highlight that the behavior we desc
 
 > Likewise, for the enzymes with significant conformational changes that have very low kcat, what will the model predict?
 
-In the main text, we describe this case using HIV protease (HIVP), which has a catalytic rate an order of magntiude lower than the rates for adenylate kinase (ADK) and protein kinase A (PKA).
-We demonstrate that increasing the catalytic rate of HIVP to be comparable to ADK and PKA increases the number of torsions that show directional flux and the magnitude of directional flux.
-
-Directional flux is limited by this low level of catalysis and we show that increasing the catalytic rate increases the level of flux.
-
-Figure 1 shows the results for HIV protease with both high and low levels of catalysis.
-Figure S4 specifically addresses the effect of $k_\text{cat}$ (shown below).
-Furthermore, we have studied the effect of lowering the catlytic rate for ADK, but we did not include this plot in the manuscript.
-Shown below, it is clear that flux deceases as $K_\text{cat}$ decreases.
-
+In the main text, we describe this case using HIV protease (HIVP) which has a catalytic rate an order of magnitude lower than the rates for adenylate kinase (ADK) and protein kinase A (PKA).
+We demonstrate that artificially boosting the catalytic rate of HIVP to be comparable to that of ADK and PKA, increases the number of torsions that show directional flux and the magnitude of the flux.
+This comparison is explicitly shown in Figures 1b, 1c, 1d, and 1f where curves for HIVP with both low and high catalytic rates are shown.
+Figure S4 goes into more detail on the effect of $k_\text{cat}$ by depicting the number of torsions that show directional flux above a particular threshold as a function of both concentration and intermediate catalytic rates (reproduced below).
+![Figure S4 in "Motor-Like Properties of Non-Motor Enzymes."](images/figure-s4.png){#fig:figure-s4 width=10cm}
+Increasing the catalytic rate increases the number of torsions that have directional flux above a threshold, but this effect saturates at large values for the catalytic rate.
+The saturating effect is shown in one of the `jupyter` notebooks linked in the [GitHub](https://github.com/GilsonLabUCSD/nonequilibrium/) site listed in the acknowledgments.
+For the $\chi$2 dihedral angle in Thr175 of ADK, flux as a function of catalytic rate from $k_\text{cat} = 0 \,\text{s}^{-1}$ to $k_\text{cat} = 1000 \,\text{s}^{-1}$ is shown.
+![Directional flux as a function of catalytic rate for a particular torsion in ADK.](images/flux-vs-catalytic-rate.png){#fig:flux-vs-catalytic-rate width=10cm}
 > Finally, the authors should carefully explain the role of change in torsional landscape and kcat (specifically in some simplistic models and fluctuating landscapes) in producing directed motion and then show the link of either landscape and kcat for the motor proteins, thus showing the evolutionary link.
 
 We have looked at simplistic models for the landscapes (flat, monotonically increasing, sawtooth waves) and concluded that landscapes that show the largest amount of flux
@@ -85,3 +84,6 @@ Separate simulations of apo and bound state protiens
 > The procedure for determining the chemical potential and rate coefficients seems a bit convoluted and not as straightforward as it can be.
 
 We mixed experimental data
+
+
+## References
