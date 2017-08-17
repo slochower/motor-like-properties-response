@@ -1,5 +1,5 @@
 {
-  "date": "August 15, 2017",
+  "date": "August 17, 2017",
   "authors": [
     {
       "github": "dhimmel",
@@ -35,15 +35,13 @@
     }
   ],
   "ci_source": {
-    "repo_slug": "greenelab/manubot-rootstock",
-    "commit": "795490c79400016d3e6171b8a3b64309d6a1507c"
+    "repo_slug": "slochower/motor-like-properties-response",
+    "commit": "64c4e2917ce8e840b6428ae40f4e34f16465734a"
   },
   "manuscript_stats": {
     "reference_counts": {
-      "doi": 1,
-      "url": 1,
-      "total": 2
+      "total": 0
     },
-    "word_count": 302
+    "word_count": 650
   }
 }

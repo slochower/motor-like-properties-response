@@ -4,7 +4,7 @@ author-meta:
 - Anthony Gitter
 - Venkat S. Malladi
 - Evan M. Cofer
-date-meta: '2017-08-15'
+date-meta: '2017-08-17'
 keywords:
 - work-in-progress
 - markdown
@@ -13,91 +13,72 @@ keywords:
 title: 'Manubot Rootstock: Manuscript Title'
 ...
 
-<small><em>
-This manuscript was automatically generated
-from [greenelab/manubot-rootstock@795490c](https://github.com/greenelab/manubot-rootstock/tree/795490c79400016d3e6171b8a3b64309d6a1507c)
-on August 15, 2017.
-</em></small>
+# Response to reviewers for "Motor-Like Properties of Non-Motor Enzymes" by Slochower and Gilson, PNAS 2017-11059
 
-## Authors
+We thank the reviewers for their considered responses of our manuscript "Motor-Like Properties of Non-Motor Enzymes".
+We believe the reviewers have highlighted some important issues with the phrasing of our conclusions.
+However, we also believe some of the reviewers' comments can be addressed quickly and succinctly.
 
+## Reviewer 1
 
-+ **Daniel S. Himmelstein**<br>
-    ![ORCID icon](images/orcid.svg){height="13px"}
-    [0000-0002-3012-7446](https://orcid.org/0000-0002-3012-7446)
-    · ![GitHub icon](images/github.svg){height="13px"}
-    [dhimmel](https://github.com/dhimmel)
-    · ![Twitter icon](images/twitter.svg){height="13px"}
-    [dhimmel](https://twitter.com/dhimmel)<br>
-  <small>
-     Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania
-     · Funded by GBMF4552
-  </small>
+### Major criticisms
 
-+ **Anthony Gitter**<br>
-    ![ORCID icon](images/orcid.svg){height="13px"}
-    [0000-0002-5324-9833](https://orcid.org/0000-0002-5324-9833)
-    · ![GitHub icon](images/github.svg){height="13px"}
-    [agitter](https://github.com/agitter)<br>
-  <small>
-     Department of Biostatistics and Medical Informatics, University of Wisconsin-Madison and Morgridge Institute for Research
-     · Funded by NIH U54AI117924
-  </small>
+> First, using the same model, the authors should explain carefully how the enzymes without significant conformational change exhibit enhanced diffusivity upon catalysis?
 
-+ **Venkat S. Malladi**<br>
-    ![ORCID icon](images/orcid.svg){height="13px"}
-    [0000-0002-0144-0564](https://orcid.org/0000-0002-0144-0564)
-    · ![GitHub icon](images/github.svg){height="13px"}
-    [vsmalladi](https://github.com/vsmalladi)<br>
-  <small>
-     The Laboratory of Signaling and Gene Expression, Cecil H. and Ida Green Center for Reproductive Biology Sciences, University of Texas Southwestern Medical Center
-  </small>
+We would like to clarify that the goal of the manuscript was not to explain the enhanced diffusivity of enzymes upon catalysis.
+Rather, we focus on revealing and describing the dynamics of chiral molecules placed out of equilibrium, sampling two potential energy surfaces.
+This model has been discussed before (!!!) but the emergence of directional flux has not been discussed.   
+Our conclusions state that the "the hydrodynamic coupling [...] might help explain why some enzymes diffuse faster when catalytically active."
+We will modify the text of our conclusion to focus more on ...
 
-+ **Evan M. Cofer**<br>
-    · ![GitHub icon](images/github.svg){height="13px"}
-    [evancofer](https://github.com/evancofer)<br>
-  <small>
-  </small>
+> Likewise, for the enzymes with significant conformational changes that have very low kcat, what will the model predict?
 
+In the main text, we describe the case of HIV protease with $k_\text{cat} \sim 1 \,\text{s}^{-1}$, compared to the relatively high values of catalysis for ADK and PKA.  
 
+Directional flux is limited by this low level of catalysis and we show that increasing the catalytic rate increases the level of flux.
 
-## Abstract
+Figure 1 shows the results for HIV protease with both high and low levels of catalysis.
+Figure S4 specifically addresses the effect of $k_\text{cat}$ (shown below).
+Furthermore, we have studied the effect of lowering the catlytic rate for ADK, but we did not include this plot in the manuscript.
+Shown below, it is clear that flux deceases as $K_\text{cat}$ decreases.
 
-Offspring of the [Deep Review](https://github.com/greenelab/deep-review).
-We cite the Deep Review like [@tJKvnIaZ] or [@tJKvnIaZ].
-The source repository is [@1B7Y2HVtw].
+> Finally, the authors should carefully explain the role of change in torsional landscape and kcat (specifically in some simplistic models and fluctuating landscapes) in producing directed motion and then show the link of either landscape and kcat for the motor proteins, thus showing the evolutionary link.
 
+We have looked at simplistic models for the landscapes (flat, monotonically increasing, sawtooth waves) and concluded that landscapes that show the largest amount of flux
 
-### Equations {.page_break_before}
+We have looked at the effect of symmetrizing landscapes as "controls."
 
-Numbered equations can be included by using `$$` delimiters with embedded LaTeX math.
-Equations can be labeled with tags like this `{#eq:label}` and referenced in text using `@eq:label`.
+### Minor criticisms
 
-$$ y = mx + b $$ {#eq:line}
+> The choice of force-field and simulation time can alter the sampled states of torsional angles? It needs to be explored and explained in detail that there is no bias due to force-field or simulation length.
 
-Equation @eq:line is the equation for a line in slope-intercept form.
+This is a good point
+The choice of force field will have an effect.
+However, since our goal was to highlight htis motion
+The torsional population histograms converge rapidly during simulation time.
+[Figure]
 
+> The choice of bin size (why was it chosen as 60 per conformation?) Does different bin size alter the results?
 
-### Figures
+Bin size was chosen arbitrarily, but the bin size and number of bins does not alter the results.
+[Figure]
 
-Numbered figures can be included by using the format `![Caption text](URL){#fig:label}`.
-The figures can be referenced in the text by using `@fig:label`.
+> The choice of D is not clear, what happens in different D values?
+Finally, transition in adjacent states, I think detailed balance should be taken into account.
 
-Figure @fig:googletrends shows the interest for "Sci-Hub" and "LibGen" over time.
+$D$ was chosen to replicate free diffusion in the absence of any energy barriers.
+That is, $D$ controls how rapidly the landscape is sampled.
+We calculated this using the diffusion of butane in free ... (as described in the SI).
+Further, the choice of $D$ is saturating.
 
-![Google Trends Search interest for Sci-Hub and LibGen.](https://cdn.rawgit.com/greenelab/scihub/7891082161dbcfcd5eeb1d7b76ee99ab44b95064/explore/trends/google-trends.svg){#fig:googletrends}
+## Reviewer 2
 
+### Major criticisms
 
-### Tables
+> Why did they choose this model? In what way is it better than more straightforward free energy and rate calculations used in atomistic simulations?
 
-Numbered tables can be included by using Markdown syntax to create the table and then adding a tag after the caption like this `{#tbl:label}`.
-The tables can be referenced in the text by using `@tbl:label`.
+Separate simulations of apo and bound state protiens 
 
-Table @tbl:interest shows the relative search interest of the terms "Sci-Hub" and "LibGen" the week of June 25, 2017.
+> The procedure for determining the chemical potential and rate coefficients seems a bit convoluted and not as straightforward as it can be.
 
-| week       | search_term | interest |
-|------------|-------------|----------|
-| 2017-06-25 | LibGen      | 47       |
-| 2017-06-25 | Sci-Hub     | 56       |
-
-Table: Google Trends Search interest for Sci-Hub and LibGen. {#tbl:interest}
+We mixed experimental data
