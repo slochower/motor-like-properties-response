@@ -35,7 +35,7 @@ pandoc --verbose \
   --csl=$CSL_PATH \
   --metadata link-citations=true \
   --smart \
-  --mathjax \
+  --katex \
   --css=github-pandoc.css \
   --include-in-header=build/assets/analytics.js \
   --include-after-body=build/assets/anchors.js \
