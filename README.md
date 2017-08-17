@@ -15,4 +15,4 @@ This directory contains the following files, which are mostly ignored on the `ma
 ## Source
 
 The manuscripts in this directory were built from
-[`2290934e57c06ff16f8c98af3296387f90e68a84`](https://github.com/slochower/motor-like-properties-response/commit/2290934e57c06ff16f8c98af3296387f90e68a84).
+[`d5d4bef9ebf0c0f19416bf7631c6a7f406a3d689`](https://github.com/slochower/motor-like-properties-response/commit/d5d4bef9ebf0c0f19416bf7631c6a7f406a3d689).
